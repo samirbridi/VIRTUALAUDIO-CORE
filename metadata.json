@@ -1,0 +1,9 @@
+{
+  "name": "VoxBridge Mixer",
+  "description": "Roteador e Mixer de Áudio Virtual. Gerencie fontes de áudio, aplique EQ, roteie para diferentes saídas e grave no formato desejado.",
+  "requestFramePermissions": [
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": []
+}

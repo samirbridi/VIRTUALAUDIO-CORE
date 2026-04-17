@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+  
+  --color-bg-deep: #0B0B0C;
+  --color-bg-surface: #161618;
+  --color-bg-card: #1E1E22;
+  --color-border-dark: #2A2A2E;
+  --color-text-primary: #E1E1E6;
+  --color-text-secondary: #8E8E93;
+  --color-accent-glow: #00FF9C;
+  --color-accent-danger: #FF4444;
+  --color-accent-active: #4F5660;
+}
+
+@layer utilities {
+  .slider-thumb-styled::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 36px;
+    background: #333;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #555;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+  .slider-thumb-styled::-moz-range-thumb {
+    width: 24px;
+    height: 36px;
+    background: #333;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #555;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+  
+  .fader-track-styled {
+    background: linear-gradient(to bottom, transparent calc(50% - 1px), var(--color-border-dark) calc(50% - 1px), var(--color-border-dark) calc(50% + 1px), transparent calc(50% + 1px));
+  }
+
+  .vu-meter-bars {
+    background-image: linear-gradient(to bottom, transparent 3px, #000 3px);
+    background-size: 100% 4px;
+  }
+}
